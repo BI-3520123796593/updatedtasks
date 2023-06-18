@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Page</title>
+    <style>
+          .image-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .image-container img {
+        height: 30px;
+        width: 30px;
+        border: 3px solid;
+      }
+
+      .image-container .tooltip {
+        visibility: hidden;
+        position: absolute;
+        bottom: 80%;
+        left: 10%;
+        transform: translateX(-50%);
+        background-color: red;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        white-space: nowrap;
+      }
+
+      .image-container:hover .tooltip {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img
+        src="https://mtsroot.github.io/profile-pro/images/mts-p11.png"
+        alt="Image"
+      />
+      <span class="tooltip">I am Image in Webpage</span>
+    </div>
+  </body>
+</html>

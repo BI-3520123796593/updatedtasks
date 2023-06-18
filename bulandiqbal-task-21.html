@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Months of the Year</title>
+  </head>
+  <body>
+    <h1>Months of the Year</h1>
+    <p id="months"></p>
+
+    <script>
+      // JavaScript code to display the names of months
+      var monthsElement = document.getElementById("months");
+      var months = "";
+
+      var monthNames = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      for (var i = 0; i < monthNames.length; i++) {
+        months += monthNames[i];
+        if (i < monthNames.length - 1) {
+          months += ",";
+        }
+      }
+
+      monthsElement.textContent = months;
+    </script>
+  </body>
+</html>
