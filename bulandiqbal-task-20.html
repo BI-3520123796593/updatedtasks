@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Today's Day</title>
+  </head>
+  <body>
+    <h1>Today's Day</h1>
+    <p id="today"></p>
+
+    <script>
+      // JavaScript code to display today's day
+      var date = new Date();
+      var day = date.getDay();
+      var todayElement = document.getElementById("today");
+      var today;
+
+      switch (day) {
+        case 0:
+          today = "Sunday";
+          break;
+        case 1:
+          today = "Monday";
+          break;
+        case 2:
+          today = "Tuesday";
+          break;
+        case 3:
+          today = "Wednesday";
+          break;
+        case 4:
+          today = "Thursday";
+          break;
+        case 5:
+          today = "Friday";
+          break;
+        case 6:
+          today = "Saturday";
+          break;
+        default:
+          today = "Unknown";
+      }
+
+      todayElement.textContent = "Today is " + today;
+    </script>
+  </body>
+</html>
